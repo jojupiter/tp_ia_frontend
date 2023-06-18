@@ -20,6 +20,7 @@ export class SendMessageComponent implements OnInit {
     this.appService.send(this.message).subscribe(result => {
       console.log("result", result)
       if(result) {
+        AppServiceService.setResults(result)
         this.router.navigateByUrl('/result')
       }
     })

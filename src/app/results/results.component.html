@@ -10,7 +10,7 @@
               Metriques
             </div>
             <div class="card-body  text-center">
-              Message : message
+              Message : {{message}}
             </div>
             <div class="card-body">
              
@@ -19,54 +19,35 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Modele 1</th>
-                        <th scope="col">Modele 2</th>
-                        <th scope="col">Modele 3</th>
-                        <th scope="col">Modele 4</th>
+                        <th scope="col">{{modele1.algo.name}} </th>
+                        <th scope="col">{{modele2.algo.name}}</th>
+                        <th scope="col">{{modele3.algo.name}}</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                       <tr>
-                        <th scope="row">Metrique 1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <th scope="row">Arruracy </th>
+                        <td>{{modele1.custom_field.accuracy}}</td>
+                        <td>{{modele2.custom_field.accuracy}}</td>
+                        <td>{{modele3.custom_field.accuracy}}</td>
                       </tr>
                       <tr>
-                        <th scope="row"> Metrique 2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@mdo</td>
+                        <th scope="row"> Precision</th>
+                        <td>{{modele1.custom_field.precision}}</td>
+                        <td>{{modele2.custom_field.precision}}</td>
+                        <td>{{modele3.custom_field.precision}}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Metrique 3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
+                        <th scope="row">Recall</th>
+                        <td>{{modele1.custom_field.recall}}</td>
+                        <td>{{modele2.custom_field.recall}}</td>
+                        <td>{{modele3.custom_field.recall}}</td>
                       </tr>
                       <tr>
-                        <th scope="row">Metrique 3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Metrique 3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Metrique 3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
+                        <th scope="row">F1</th>
+                        <td>{{modele1.custom_field.f1}}</td>
+                        <td>{{modele2.custom_field.f1}}</td>
+                        <td>{{modele3.custom_field.f1}}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -94,7 +75,7 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-header">
-                          Quote
+                          Accuracy
                         </div>
                         <div class="card-body">
                           <blockquote class="blockquote mb-0">
@@ -107,7 +88,37 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-header  ">
-                          Quote
+                          Precision
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>
+                </div>
+               </div> 
+               <br>
+               <br>
+               <div class="row" >
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                          Recall
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                          </blockquote>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header  ">
+                          F1
                         </div>
                         <div class="card-body">
                           <blockquote class="blockquote mb-0">
