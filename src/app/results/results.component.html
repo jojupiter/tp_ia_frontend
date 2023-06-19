@@ -68,67 +68,50 @@
 
         <div class="card">
             <div class="card-header  text-center">
-              Interpretation
+              Resultat
             </div>
             <div class="card-body">
                <div class="row" >
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-header">
-                          Accuracy
+                          {{modele1.algo.name}}
                         </div>
                         <div class="card-body">
                           <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <p>Le message est un {{getResultSpam(modele1.spam)}}</p>
                           </blockquote>
                         </div>
                       </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-header  ">
-                          Precision
+                          {{modele2.algo.name}}
+
                         </div>
                         <div class="card-body">
                           <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            <p>Le message est un {{getResultSpam(modele2.spam)}}</p>
                           </blockquote>
                         </div>
                       </div>
                 </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                      <div class="card-header  ">
+                        {{modele3.algo.name}}
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>Le message est un {{getResultSpam(modele3.spam)}}</p>
+                        </blockquote>
+                      </div>
+                    </div>
+              </div>
                </div> 
-               <br>
-               <br>
-               <div class="row" >
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-header">
-                          Recall
-                        </div>
-                        <div class="card-body">
-                          <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-header  ">
-                          F1
-                        </div>
-                        <div class="card-body">
-                          <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                          </blockquote>
-                        </div>
-                      </div>
-                </div>
-               </div> 
+               
+               
             </div>    
             <div class="card-footer  text-center ">
                 <button type="button" class="btn btn-secondary " routerLink="/welcome">Accueil</button>

@@ -25,4 +25,9 @@ export class ResultsComponent implements OnInit {
     
   }
 
+  getResultSpam(spam:boolean):String {
+    if (spam ) return 'Spam'
+    else return 'Non Spam'
+  }
+
 }
