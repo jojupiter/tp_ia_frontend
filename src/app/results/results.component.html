@@ -7,7 +7,7 @@
 
         <div class="card ">
             <div class="card-header  text-center">
-              Metriques
+              Metriques avec reduction de dimension
             </div>
             <div class="card-body  text-center">
               Message : {{message}}
@@ -68,7 +68,7 @@
 
         <div class="card">
             <div class="card-header  text-center">
-              Resultat
+              Resultat Avec Reduction de dimension
             </div>
             <div class="card-body">
                <div class="row" >
@@ -116,7 +116,75 @@
             <div class="card-footer  text-center ">
                 <button type="button" class="btn btn-secondary " routerLink="/welcome">Accueil</button>
               </div>
-    </div>
+    
+    <div class="row" style="margin-top:5%">
+    
+
+      <div class="card">
+          <div class="card-header  text-center">
+            Resultat Sans Reduction de dimension
+          </div>
+          <div class="card-body">
+             <div class="row" >
+              <div class="col-sm-4">
+                  <div class="card">
+                      <div class="card-header">
+                        {{modele4.algo.name}}
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>Le message est un {{getResultSpam(modele4.spam)}}</p>
+                        </blockquote>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card">
+                      <div class="card-header  ">
+                        {{modele5.algo.name}}
+
+                      </div>
+                      <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <p>Le message est un {{getResultSpam(modele5.spam)}}</p>
+                        </blockquote>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header  ">
+                      {{modele6.algo.name}}
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>Le message est un {{getResultSpam(modele6.spam)}}</p>
+                      </blockquote>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                  <div class="card-header  ">
+                    {{modele7.algo.name}}
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>Le message est un {{getResultSpam(modele7.spam)}}</p>
+                    </blockquote>
+                  </div>
+                </div>
+          </div>
+             </div> 
+             
+             
+          </div>    
+          <div class="card-footer  text-center ">
+              <button type="button" class="btn btn-secondary " routerLink="/welcome">Accueil</button>
+            </div>
+  </div>
+
+</div>
 
 </div>
 
